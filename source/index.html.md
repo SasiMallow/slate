@@ -2,9 +2,7 @@
 title: API Reference
 
 language_tabs:
-  - shell
   - ruby
-  - python
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
@@ -34,17 +32,6 @@ require 'kittn'
 api = Kittn::APIClient.authorize!('meowmeowmeow')
 ```
 
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-```
-
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
-```
 
 > Make sure to replace `meowmeowmeow` with your API key.
 
@@ -67,18 +54,6 @@ require 'kittn'
 
 api = Kittn::APIClient.authorize!('meowmeowmeow')
 api.kittens.get
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
 ```
 
 > The above command returns JSON structured like this:
@@ -126,18 +101,6 @@ require 'kittn'
 
 api = Kittn::APIClient.authorize!('meowmeowmeow')
 api.kittens.get(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
 ```
 
 > The above command returns JSON structured like this:
